@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+/* 공통요소 */
+* { box-sizing: border-box;}
+html.fixed {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+body {
+  font-size: 16px;
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  line-height: 1;
+  word-break: keep-all; /*한글을 단어 단위로 줄바꿈 처리 */
+  color: #333;
+  height: 10000px;
+
+}
+a {
+  text-decoration: none;
+  color: #333; 
+}
+/* Btn */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  font-size: 11px;
+  color: #fff;
+  background-color: rgb(0, 113, 227);
+  cursor: pointer;
+}
+.btn:focus {
+  box-shadow:0 0 10px 2px #8dbce5;
+}
+.btn-white {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+.btn-white:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+
+/* Header */
+header {
+  background-color: #333;
+}
+header .inner{
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+header ul.menu{
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+header ul.menu > li{
+  display: flex;
+  position: relative;
+  transition-delay: .4s;
+}
+header ul.menu > li > a{
+  padding: 0 10px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  opacity: .8;
+}
+header ul.menu > li.apple-logo > a,
+header ul.menu > li.search-s > a,
+header ul.menu > li.basket-s > a{
+  width: 20px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header ul.menu > li.apple-logo > a {background-image: url("../images/logo.svg");}
+header ul.menu > li.search-s > a {background-image: url("../images/search.svg");}
+header ul.menu > li.basket-s > a {background-image: url("../images/storage.svg");}
+
+header ul.menu > li > a:hover{
+  opacity: 1;
+}
+/* Header / Menu / Basket */
+header .basket{
+  visibility: hidden;
+  width: 300px;
+  padding: 10px 20px;
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: calc(100% + 4px);
+  right: -11px;
+  transition: .5s;
+  opacity: 0;
+}
+header .basket.show {
+  visibility: visible;
+  opacity: 1;
+}
+header .basket .arrow{
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  overflow: hidden;
+  top: -10px;
+  right: 10px;
+}
+header .basket .arrow::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+  transform: rotate(45deg);
+  transform-origin: 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+header .basket .message{
+  padding: 20px 0;
+  font-size: 18px;
+  color: #424242;
+}
+header .basket ul{margin-top: 20px;}
+header .basket ul li{}
+header .basket ul li a{
+  display: block;
+  padding: 8px;
+  font-size: 13px;
+  color: #424242;
+  opacity: .6;
+}
+header .basket ul li a:hover{opacity: 1;}
+header .basket ul li a img{ width: 12px; height: 12px;}
+
+/* Header / Search */
+header .search-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+}
+header .search {
+  max-width: 680px;
+  margin: 0 auto;
+  position: relative;
+}
+header .search .shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+}
+header .search .textfield{
+  position: relative;
+}
+header .search input {
+  width: 100%;
+  height: 44px;
+  padding: 0 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 18px;
+  color: #fff;
+}
+header .search .search-icon{
+  width: 40px;
+  height: 44px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .4;
+}
+header .search .search-closer{
+  width: 40px;
+  height: 44px;
+  background-image: url("../images/search-closer.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: .4;
+  cursor: pointer;
+}
+header .search .search-closer:hover{
+  opacity: 1;
+}
+header .search .auto{
+  width: 100%;
+  padding: 40px 40px 20px;
+  border-radius: 0 0 18px 18px;
+  background-color: #fff;
+  position: absolute;
+  top: 44px;
+  left: 0;
+}
+header .search .auto h3{
+  font-size: 13px;
+  color: #8a8a8a;
+  margin-bottom: 10px;
+}
+
+header .search .auto ul li a{
+  display: block;
+  margin: 0 ;
+  padding: 5px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+header .search .auto ul li a img{
+  width: 16px;
+  height: 16px;
+  opacity: .4;
+  vertical-align: bottom;
+}
+header .search .auto ul li:hover a img{
+  opacity: 1;
+}
+header .search .auto ul li:hover a{
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+header .search input,
+header .search .search-icon,
+header .search .auto h3,
+header .search .auto li {
+  transition: .6s;
+  transform: translate(100px, 0);
+}
+
+header.searching ul.menu > li {
+  transform: scale(.7);
+  opacity: 0;
+}
+header.searching .search-wrap {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .2s;
+}
+header.searching .search input,
+header.searching .search .search-icon,
+header.searching .search .auto h3,
+header.searching .search .auto li {
+  transition: .2s;
+  transform: translate(0, 0);
+}
+
+/* Nav */
+nav {
+  background-color: rgba(251,251,253, .7);
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid #ededed;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav .inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+nav h1 {
+  font-size: 22px;
+  font-weight: 600;
+  flex-grow: 1;
+}
+nav .menu {
+  display: flex;
+  gap: 10px;
+  
+}
+nav .menu li {}
+nav .menu li a{
+  display: block;
+  padding: 10px;
+  font-size: 11px;
+  opacity: .8;
+  
+}
+nav .menu li:hover a{
+  opacity: 1;
+}
+nav .menu li.active a{
+  opacity: 1;
+  cursor: default;
+  border-bottom: 1px solid;
+}
+nav .menu li.active:hover a{
+  color: #333;
+}
+
+/* hero contents */
+.hero {}
+.hero .inner {}
+.hero h1{}
+.hero figure{}
+.hero figure img{}
+.hero figure figcaption{}
+.hero figure figcaption .caption-app{}
+.hero figure figcaption .caption-chip{}
+.hero figure figcaption .caption-retina{}
+.hero h2{}
+.hero p.pricing{}
+.hero p.description{}
+.hero .links{}
