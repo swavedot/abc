@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 html {
   --color-white: #fff;
@@ -17,6 +18,8 @@ html {
 
 }
 >>>>>>> c524033 (te)
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 /* 공통요소 */
 * { box-sizing: border-box;}
 html.fixed {
@@ -30,16 +33,22 @@ body {
   line-height: 1;
   word-break: keep-all; /*한글을 단어 단위로 줄바꿈 처리 */
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #333;
   height: 10000px;
 =======
   color: var(--color-font);
   
 >>>>>>> c524033 (te)
+=======
+  color: #333;
+  height: 10000px;
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 
 }
 a {
   text-decoration: none;
+<<<<<<< HEAD
 <<<<<<< HEAD
   color: #333; 
 =======
@@ -69,6 +78,9 @@ p {
   padding: 0 20px;
   position: relative;
 >>>>>>> c524033 (te)
+=======
+  color: #333; 
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 }
 /* Btn */
 .btn {
@@ -91,6 +103,9 @@ p {
 .btn-white {
   background-color: #fff;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
   border: 1px solid #333;
   color: #333;
 }
@@ -108,6 +123,7 @@ header .inner{
   max-width: 1024px;
   margin: 0 auto;
   position: relative;
+<<<<<<< HEAD
 =======
   border: 1px solid var(--color-font);
   color: var(--color-font);
@@ -261,6 +277,8 @@ header .inner{
   max-width: 1024px;
   
 >>>>>>> c524033 (te)
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 }
 header ul.menu{
   height: 44px;
@@ -310,9 +328,12 @@ header .basket{
   opacity: 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 header .basket img{display: inline;}
 >>>>>>> c524033 (te)
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 header .basket.show {
   visibility: visible;
   opacity: 1;
@@ -437,10 +458,14 @@ header .search .auto ul li a{
   padding: 5px 0 5px;
   font-size: 14px;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #333;
 =======
   color: var(--color-font);
 >>>>>>> c524033 (te)
+=======
+  color: #333;
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 }
 header .search .auto ul li a img{
   width: 16px;
@@ -491,11 +516,16 @@ nav {
 }
 nav .inner {
 <<<<<<< HEAD
+<<<<<<< HEAD
   max-width: 1024px;
   margin: 0 auto;
 =======
   
 >>>>>>> c524033 (te)
+=======
+  max-width: 1024px;
+  margin: 0 auto;
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
   height: 52px;
   display: flex;
   align-items: center;
@@ -529,6 +559,9 @@ nav .menu li.active a{
 }
 nav .menu li.active:hover a{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
   color: #333;
 }
 
@@ -545,6 +578,7 @@ nav .menu li.active:hover a{
 .hero h2{}
 .hero p.pricing{}
 .hero p.description{}
+<<<<<<< HEAD
 .hero .links{}
 =======
   color: var(--color-font);
@@ -1211,3 +1245,6 @@ footer .copy ul li:hover a{text-decoration: underline;}
 
 }
 >>>>>>> c524033 (te)
+=======
+.hero .links{}
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de

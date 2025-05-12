@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import ipads from "../data/ipads.js";
 import navigations from "../data/navigations.js";
 
 >>>>>>> c524033 (te)
+=======
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 // 장바구니
 const basketsEl = document.querySelector('header .basket-s');
 const basketEl = basketsEl.querySelector('.basket');
@@ -76,6 +79,7 @@ function hideSearch() {
   });
   searchDelayEls.reverse();
   searchInputEl.value='';
+<<<<<<< HEAD
 <<<<<<< HEAD
 }
 =======
@@ -168,3 +172,6 @@ navigations.forEach(function(nav){
 const thisyear = document.querySelector('span.this-year')
 thisyear.textContent = new Date().getFullYear()
 >>>>>>> c524033 (te)
+=======
+}
+>>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
