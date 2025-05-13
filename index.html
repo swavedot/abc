@@ -22,20 +22,22 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="./css/main.css">
-<<<<<<< HEAD
   <script defer type="module" src="./js/main.js"></script>
 </head>
-=======
-  <script defer src="./js/main.js"></script>
-</head>
-
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 <body>
 
   <!-- Header -->
   <header>
     <div class="inner">
       <ul class="menu">
+        <li class="menu-starter">
+          <a href="javascript:void(0)">
+             <div>
+              <span></span>
+              <span></span>
+             </div>
+          </a>
+        </li>
         <li class="apple-logo"><a href="javascript:void(0)">Apple</a></li>
         <li><a href="javascript:void(0)">스토어</a></li>
         <li><a href="javascript:void(0)">Mac</a></li>
@@ -43,11 +45,7 @@
         <li><a href="javascript:void(0)">iPhone</a></li>
         <li><a href="javascript:void(0)">Watch</a></li>
         <li><a href="javascript:void(0)">AirPods</a></li>
-<<<<<<< HEAD
-        <li><a href="javascript:void(0)">액세서리1</a></li>
-=======
         <li><a href="javascript:void(0)">액세서리</a></li>
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
         <li><a href="javascript:void(0)">고객지원</a></li>
         <li class="search-s"><a href="javascript:void(0)">검색</a></li>
         <li class="basket-s">
@@ -75,26 +73,41 @@
             <div class="search-icon"></div>
             <div class="search-closer"></div>
           </div>
+          <div class="search-canceler">취소</div>
           <div class="auto">
             <h3>빠른링크</h3>
             <ul>
-              <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Store Online에서
-                  쇼핑하기</a></li>
+              <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Store Online에서 쇼핑하기</a></li>
               <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Vision Pro</a></li>
               <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">AirPods</a></li>
-              <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Intelligence</a>
-              </li>
+              <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Intelligence</a></li>
               <li><a href="javascript:void(0)"><img src="./images/search-arrow.svg" alt="화살표">Apple Trade In</a></li>
             </ul>
           </div>
         </div>
       </div>
+      <!-- 모바일 메뉴 -->
+      <div class="clone-menu">
+        <ul>
+          <li><a href="javascript:void(0)">스토어</a></li>
+          <li><a href="javascript:void(0)">Mac</a></li>
+          <li><a href="javascript:void(0)">iPad</a></li>
+          <li><a href="javascript:void(0)">iPhone</a></li>
+          <li><a href="javascript:void(0)">Watch</a></li>
+          <li><a href="javascript:void(0)">AirPods</a></li>
+          <li><a href="javascript:void(0)">액세서리</a></li>
+          <li><a href="javascript:void(0)">고객지원</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <!-- Nav -->
   <nav>
+    <div class="shadow"></div>
+    <div class="contents-bg"></div>
     <div class="inner">
       <h1>AirPods</h1>
+      <div class="menu-toggler"></div>
       <ul class="menu">
         <li class="active"><a href="javascript:void(0)">개요</a></li>
         <li><a href="javascript:void(0)">가이드 동영상</a></li>
@@ -105,17 +118,16 @@
     </div>
   </nav>
 
-<<<<<<< HEAD
   <main>
   <!-- Hero contents -->
   <section class="hero">
     <div class="inner">
-      <h1 class="bgtext"></h1>
+      <h1 class="bgtext">iPad</h1>
       <!-- figure : 시멘틱 태그이고 이미지, 도표, 인용문 등 독립적인 콘텐츠 단위 -->
       <div class="figures">
         <figure>
           <img src="./images/hero_ipad_02.png" alt="여러색의 iPad">
-          <figcaption class>
+          <figcaption>
             <div class="caption-app bgtext"></div>
             <div class="caption-chip bgtext"></div>
             <div class="caption-retina bgtext"></div>
@@ -127,26 +139,6 @@
       <p class="description">
         믿을 수 없이 얇고, 가볍고, 휴대하기 좋은 디자인 안에 막강한 성능을 한가득 담은 새로운 iPad Pro.
         극강의 휴대성이 돋보이는 11 모델 그리고 역대 가장 얇은 Apple 제품인 동시에 널찍한 화면까지 갖춘
-=======
-  <!-- Hero contents -->
-  <section class="hero">
-    <div class="inner">
-      <h1>iPad</h1>
-      <!-- figure : 시멘틱 태그이고 이미지, 도표, 인용문 등 독립적인 콘텐츠 단위 -->
-      <figure>
-        <img src="./images/hero_ipad_02.png" alt="여러색의 iPad">
-        <figcaption>
-          <div class="caption-app">무엇이든 탁월하게, 직관적으로</div>
-          <div class="caption-chip">강력한 Apple M3 칩 탑재</div>
-          <div class="caption-retina">시선을 사로잡는 Liquid Retina</div>
-        </figcaption>
-      </figure>
-      <h2>Apple Intelligence를 위한 탄생.</h2>
-      <p class="pricing">₩949,000부터</p>
-      <p class="description">
-        믿을 수 없이 얇고, 가볍고, 휴대하기 좋은 디자인 안에 막강한 성능을 한가득 담은 새로운 iPad Pro. 
-        극강의 휴대성이 돋보이는 11 모델 그리고 역대 가장 얇은 Apple 제품인 동시에 널찍한 화면까지 갖춘 
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
         13 모델이 iPad의 새 지평을 엽니다.
       </p>
       <div class="links">
@@ -155,7 +147,6 @@
       </div>
     </div>
   </section>
-<<<<<<< HEAD
 
   <!-- Air -->
   <section class="air">
@@ -320,7 +311,6 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
 
   <!-- Accessories -->
@@ -366,7 +356,6 @@
        </div>
       </div>
      </div>
-  </div>
   </section>
   
 
@@ -574,8 +563,6 @@
      </div>
    </footer>
 </main>
-=======
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 </body>
 
 </html>

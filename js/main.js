@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import ipads from "../data/ipads.js";
 import navigations from "../data/navigations.js";
 
->>>>>>> c524033 (te)
-=======
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
 // 장바구니
 const basketsEl = document.querySelector('header .basket-s');
 const basketEl = basketsEl.querySelector('.basket');
@@ -39,7 +33,7 @@ function hideBasket(){
 
 // 검색
 const headerEl = document.querySelector('header');
-// const headerMenuEls = headerEl.querySelectorAll('ul.menu > li') // foreach만 가능
+// const headerMenuEls = headerEl.querySelectorAll('ul.menu > li') // for each만 가능
 const headerMenuEls = [...headerEl.querySelectorAll('ul.menu > li')]//배열(전개연산자를 사용)
 const searchWrapEl = headerEl.querySelector('.search-wrap');
 const searchsEl = headerEl.querySelector('.search-s');
@@ -50,14 +44,17 @@ const searchDelayEls = [...searchWrapEl.querySelectorAll('li')]
 
 
 searchsEl.addEventListener('click', showSearch);
-closerEl.addEventListener('click', hideSearch);
+closerEl.addEventListener('click', function(event){
+  event.stopPropagation()
+  hideSearch()
+});
 shadowEl.addEventListener('click', hideSearch);
 
 // searching 함수 만들기
 function showSearch() {
   headerEl.classList.add('searching');
   // documentElement : html태그 자체
-  document.documentElement.classList.add('fixed');
+  stopscroll()
   headerMenuEls.reverse().forEach(function(el, index){
     el.style.transitionDelay = index * .4 / headerMenuEls.length + 's'
   });
@@ -70,7 +67,7 @@ function showSearch() {
 }
 function hideSearch() {
   headerEl.classList.remove('searching');
-  document.documentElement.classList.remove('fixed');
+  playscroll()
   headerMenuEls.reverse().forEach(function(el, index){
     el.style.transitionDelay = index * .4 / headerMenuEls.length + 's'
   });
@@ -79,15 +76,74 @@ function hideSearch() {
   });
   searchDelayEls.reverse();
   searchInputEl.value='';
-<<<<<<< HEAD
-<<<<<<< HEAD
 }
-=======
+function playscroll() {
+  document.documentElement.classList.remove('fixed');
+}
+function stopscroll() {
+  document.documentElement.classList.add('fixed'); //화면 스크롤 막기
+}
+
+// 헤더 메뉴 토글
+const menuStarterEl = document.querySelector('header .menu-starter')
+menuStarterEl.addEventListener('click', function(){
+  if (headerEl.classList.contains('menuing')) {
+    headerEl.classList.remove('menuing')
+    searchInputEl.value='';
+    playscroll()
+  } else {
+    headerEl.classList.add('menuing')
+    stopscroll()
+  }
+})
+
+// 헤더 검색
+const searchTextFieldEl = document.querySelector('header .textfield')
+const searchCancelEl = document.querySelector('header .search-canceler')
+searchTextFieldEl.addEventListener('click', function(){
+  headerEl.classList.add('searching-mobile')
+  searchInputEl.focus()
+})
+searchCancelEl.addEventListener('click', function(){
+  headerEl.classList.remove('searching-mobile')
+})
+
+// 검색모드에서 모바일 화면 전환시 모바일 메뉴화면으로 보이게
+window.addEventListener('resize', function(){
+  if (this.window.innerWidth <= 740) {
+    headerEl.classList.remove('searching')
+  } else {
+    headerEl.classList.remove('searching-mobile')
+  }
+}) 
+
+// nav 메뉴 작업
+const navEl = document.querySelector('nav')
+const navMenuToggleEl = navEl.querySelector('.menu-toggler')
+const navMenuShadowEl = navEl.querySelector('.shadow')
+
+navMenuToggleEl.addEventListener('click', function(){
+  if(navEl.classList.contains('menuing')) {
+    hideNavMenu()
+  } else {
+    showNavMenu()
+  }
+})
+navEl.addEventListener('click',function(event){
+  event.stopPropagation()
+})
+navMenuShadowEl.addEventListener('click',hideNavMenu)
+window.addEventListener('click',hideNavMenu)
+function showNavMenu() {
+  navEl.classList.add('menuing')
+}
+function hideNavMenu() {
+  navEl.classList.remove('menuing')
 }
 
 // 요소가 화면에 보이는지 안보이는지 관찰 
-const io = new IntersectionObserver(function(eneties){
-  eneties.forEach(function(entry){
+const io = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
     if (!entry.isIntersecting){
       return
     }
@@ -171,7 +227,3 @@ navigations.forEach(function(nav){
 // 현재년도 
 const thisyear = document.querySelector('span.this-year')
 thisyear.textContent = new Date().getFullYear()
->>>>>>> c524033 (te)
-=======
-}
->>>>>>> b986a668b9107c793cf60a6d43b215b6458380de
