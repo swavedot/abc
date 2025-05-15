@@ -215,7 +215,8 @@ navigations.forEach(function(nav){
 
   mapEl.innerHTML = /* html*/`
     <h3>
-      <span class='text'>${nav.title}</span>
+      <span class="text">${nav.title}</span>
+      <span class="icon">+</span>
     </h3>
     <ul>
        ${mapList}
@@ -227,3 +228,12 @@ navigations.forEach(function(nav){
 // 현재년도 
 const thisyear = document.querySelector('span.this-year')
 thisyear.textContent = new Date().getFullYear()
+
+//하단 아코디언 메뉴 
+const mapEl =document.querySelectorAll('footer .navigations .map')
+mapEl.forEach(function(el){
+  const h3El = el.querySelector('h3')
+  h3El.addEventListener('click', function(){
+    el.classList.toggle('active')
+  })
+})
