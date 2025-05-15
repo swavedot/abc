@@ -191,8 +191,8 @@ a.link::after {
 /*첫번째 단락 */
 .info .icon.icon--camera { background-image: url("../images/sprite/sprite_back_camera.png"); }
 .info .icon.icon--scan { background-image: url("../images/sprite_scan.png"); }
-.info .icon.icon--stage { background-image: url("../images/sprite_center_stage.png"); }
-.info .icon.icon--apps { background-image: url("../images/sprite_apps.png"); }
+.info .icon.icon--stage { background-image: url("../images/sprite/sprite_center_stage.png"); }
+.info .icon.icon--app { background-image: url("../images/sprite/sprite_apps.png"); }
 .info .icon.icon--neural { background-image: url("../images/sprite_neural.png"); }
 
 /* 두번째 단락 */
@@ -203,14 +203,14 @@ a.link::after {
 .info .icon.icon--download { background-image: url("../images/sprite/sprite_download.png"); }
 
 /* 세번째 단락 */
-.info .icon.icon--keyboard { background-image: url("../images/sprite_keyboard.png"); }
-.info .icon.icon--notes { background-image: url("../images/sprite_notes.png"); }
+.info .icon.icon--keyboard { background-image: url("../images/sprite/sprite_keyboard.png"); }
+.info .icon.icon--notes { background-image: url("../images/sprite/sprite_notes.png"); }
 
 /* 네번째 단락 */
-.info .icon.icon--front_camera { background-image: url("../images/sprite_front_camera.png"); }
-.info .icon.icon--covers { background-image: url("../images/sprite_covers.png"); }
-.info .icon.icon--pencil { background-image: url("../images/sprite_pencil.png"); }
-.info .icon.icon--true_tone { background-image: url("../images/sprite_true_tone.png"); }
+.info .icon.icon--front_camera { background-image: url("../images/sprite/sprite_front_camera.png"); }
+.info .icon.icon--covers { background-image: url("../images/sprite/sprite_covers.png"); }
+.info .icon.icon--pencil { background-image: url("../images/sprite/sprite_pencil.png"); }
+.info .icon.icon--true_tone { background-image: url("../images/sprite/sprite_true_tone.png"); }
 
 .info p {
   font-size: 15px;
