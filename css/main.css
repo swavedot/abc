@@ -1110,7 +1110,7 @@ main {
     transform: translate(-100px, 10px);
   }
   .air .camera .figures figcaption {
-    transform: scale(.8) translate(182px, 289px);
+    transform: scale(.8) translate(100px, 263px);
   }
   .air .camera .infos {
     margin-top: 0px;
@@ -1209,7 +1209,7 @@ main {
   .display .notes h1 {
     width: 400px;
     height: 170px;
-    transform: translate(200px, 0px);
+    transform: translate(306px, -32px);
   }
   .display .notes .figures {
     height: 431px;
