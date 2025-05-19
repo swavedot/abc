@@ -919,7 +919,7 @@ main {
     margin-bottom: 20px;
   }
   .hero figure {
-    transform: translate(50px, 50px);
+    transform: translate(200px, 50px);
   }
   .hero figure img {
     width: 540px;
@@ -1052,14 +1052,19 @@ main {
   height: 400px;
 }
 .air .camera .figures figure {
-  transform: translate(0, -80px);
+  width: 500px;
+  transform: translate(0px, 0px);
 }
 .air .camera .figures figcaption {
-  width: 160px;
+  width: 100px;
   height: 90px;
   background-image: url("../images/ipad_air_03_text.png");
-  transform: translate(0px, 239px);
+  transform: translate(64px, 250px);
 }
+.air .camera .figures .infos {
+  width: 1000px;
+}
+
 @media (max-width: 1000px) {
   .air .camera {
     margin-top: 0;
@@ -1074,13 +1079,14 @@ main {
   }
    .air .camera figure img {
     width: 500px;
-    transform: translate(148px, 10px);
+    transform: translate(285px, 10px);
   }
   .air .camera .figures figcaption {
-    transform: scale(.8) translate(276px, 362px);
+    transform: scale(.8) translate(450px, 398px);
   }
-  .air .infos {
+  .air .camera .infos {
     margin-top: -70px;
+    transform: scale(.8) translate(-100px, 0px);
   }
 }
 @media (max-width: 740px) {
@@ -1096,7 +1102,7 @@ main {
     transform: translate(-6px, 0px);
   }
   .air .camera .figures figcaption {
-    transform: scale(.8) translate(182px, 350px);
+    transform: scale(.8) translate(182px, 389px);
   }
   .air .camera figure img {
     width: 450px;
@@ -1117,26 +1123,28 @@ main {
   margin-top: 60px;
 }
 .air .size-model .figures {
-  height: 600px;
+  height: 618px;
 }
 .air .size-model .figures figure {
-  transform: translate(80px, 60px);
+  width: 600px;
+  transform: translate(100px, 100px);
 }
 .air .size-model .figures figcaption {
   width: 204px;
   height: 185px;
   background-image: url("../images/ipad_size_02_text.png");
-  transform: translate(231px, 410px);
+  transform: translate(231px, 350px);
 }
 @media (max-width:1000px) {
   .air .size-model .figures {
     height: 520px;
   }
   .air .size-model .figures figure {
-    transform: translate(-60px, 0px);
+    transform: translate(100px, 0px);
   }
   .air .infos {
     margin-top: 0px;
+    transform: translate(100px, 0px);
   }
 }
 @media (max-width: 740px) {
@@ -1145,13 +1153,13 @@ main {
     margin-top: 30px;
   }
   .air .size-model .figures figure{
-    transform: translate(-20px, 0px);
+    transform: translate(100px, 0px);
   }
   .air .size-model figure img {
     width: 400px;
   }
   .air .size-model .figures figcaption {
-    transform: scale(.8) translate(200px, 398px);
+    transform: scale(.8) translate(200px, 300px);
   }
 }
 /* display */
@@ -1166,7 +1174,7 @@ main {
 }
 .display .notes .figures {
   height: 600px;
-  transform: translate(-200px, -50px);
+  transform: translate(-200px, 0px);
 }
 .display .notes figcaption {
   background-image: url("../images/display_notes_text01.png");
@@ -1199,7 +1207,7 @@ main {
     height: 431px;
   }
   .display .notes figure {
-    transform: translate(80px, 0px);
+    transform: translate(200px, 0px);
   }
   .display .notes figcaption {
     transform: scale(.8) translate(865px, 100px);
@@ -1237,13 +1245,13 @@ main {
     margin-top: 0;
   }
   .display .play figure {
-    transform: translate(-148px, 0px);
+    transform: translate(0px, 0px);
   }
   .display .play figure img {
     width: 600px;
   }
   .display .play .infos{
-    transform: translate(100px, -42px);
+    transform: translate(-50px, -42px);
   }
   .display .play .figures {
     height: 491px;
@@ -1325,7 +1333,7 @@ main {
   width: 319px;
   height: 316px;
   background-image: url("../images/ipad_camera_01_text.png");
-  transform: translate(-300px, 500px);
+  transform: translate(100px, 660px);
 }
 @media(max-width:1000px) {
   .camera {
@@ -1334,10 +1342,13 @@ main {
   .camera .stage h1 {
     width: 350px;
     height: 200px;
-    transform: translate(31px, 57px);
+    transform: translate(150px, 57px);
+  }
+  .camera .stage .info .icon {
+    transform: translate(-150px, 100px);
   }
   .camera .stage p{
-    transform: translate(21px, 100px);
+    transform: translate(-150px, 120px);
   }
   .camera .stage video {
     transform: scale(.69);
@@ -1346,12 +1357,13 @@ main {
   }
   .camera .stage .figures {
     height: 600px;
+    transform: translate(130px, 100px);
   }
   .camera .stage figure img {
     width: 680px;
   }
   .camera .stage figcaption {
-    transform: scale(.8) translate(-262px, 484px);
+    transform: scale(.8) translate(0px, 520px);
   }
   .camera .stage .controller--play,
   .camera .stage .controller--pause {
@@ -1416,11 +1428,14 @@ main {
   .camera .edit {
     margin-top: 200px;
   }
+  .camera .edit .infos {
+    transform: translate(100px, 10px);
+  }
   .camera .edit .figures {
     height: auto;
   }
   .camera .edit figure {
-    transform: translate(80px, 110px);
+    transform: translate(180px, 110px);
   }
   .camera .edit figure img{
     width: 400px;
@@ -1497,7 +1512,7 @@ main {
     height: 660px;
   }
   .accessories figure {
-    transform: translate(-25px, 0px);
+    transform: translate(100px, 100px);
   }
   .accessories figure img{
     width: 750px;
@@ -1507,6 +1522,13 @@ main {
   }
   .accessories figcaption .caption-down {
     transform: translate(200px, 548px);
+  }
+  .accessories .infos {
+    width: 70%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; /* 여백균등 */
+    transform: translate(150px, 100px);
   }
 }
 @media (max-width: 740px) {
@@ -1601,39 +1623,41 @@ main {
 @media (max-width:1000px) {
   .watch {
     margin-top: -300px; 
-    height: 1300px;
+    height: 1500px;
   }
   .watch h1 {
     width: 320px;
     margin: 0;
-    transform: translate(0px, 400px);
+    transform: translate(300px, 600px);
   }
   .watch .infos {
-    margin-top: -100px;
+    margin-top: 200px;
+    transform: translate(-100px, 400px);
   }
   .watch .figures {
     height: 0px;
+    transform: translate(0px, 0px);
   }
   .watch .figures .figure-split-01 img {
     width: 430px;
-    transform: translate(144px, 100px);
+    transform: translate(250px, 150px);
   }
   .watch .figures .figure-split-01 figcaption {
-    transform: translate(100px, 92px);
+    transform: translate(450px, 100px);
   }
   .watch .figures .figure-split-02 img {
     width: 300px;
-    transform: translate(170px, -46px);
+    transform: translate(300px, -46px);
   }
   .watch .figures .figure-split-02 figcaption {
-    transform: translate(130px, 271px);
+    transform: translate(130px, 200px);
   }
   .watch .figures .figure-split-03 img {
     width: 430px;
-    transform: translate(140px, -26px);
+    transform: translate(150px, -100px);
   }
   .watch .figure-split-03 figcaption {
-    transform: translate(200px, 276px);
+    transform: translate(200px, 200px);
   }
 }
 @media (max-width:740px) {
