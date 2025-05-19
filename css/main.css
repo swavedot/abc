@@ -998,6 +998,9 @@ main {
   transform: translate(500px, 150px);
 }
 @media (max-width:1000px) {
+  .air .m3-chip{
+    transform: translate(150px, 0px);
+  }
   .air .m3-chip h1 {
     width: 240px;
     height: 140px;
@@ -1021,6 +1024,9 @@ main {
 @media (max-width:740px) {
   .air {
     margin-top: 80px;
+  }
+  .air .m3-chip {
+    transform: translate(0px, 10px);
   }
   .air .m3-chip h1 {
     margin: 0 auto;
@@ -1061,9 +1067,7 @@ main {
   background-image: url("../images/ipad_air_03_text.png");
   transform: translate(64px, 250px);
 }
-.air .camera .figures .infos {
-  width: 1000px;
-}
+
 
 @media (max-width: 1000px) {
   .air .camera {
@@ -1099,17 +1103,18 @@ main {
     order: 1;
   }
   .air .camera .figures figure {
-    transform: translate(-6px, 0px);
-  }
-  .air .camera .figures figcaption {
-    transform: scale(.8) translate(182px, 389px);
+    transform: translate(200px, 0px);
   }
   .air .camera figure img {
-    width: 450px;
-    transform: translate(10px, 10px);
+    width: 300px;
+    transform: translate(-100px, 10px);
   }
-  .air .infos {
+  .air .camera .figures figcaption {
+    transform: scale(.8) translate(182px, 289px);
+  }
+  .air .camera .infos {
     margin-top: 0px;
+    transform: translate(100px, 10px);
   }
   .air .info {
     max-width: none;
@@ -1160,6 +1165,9 @@ main {
   }
   .air .size-model .figures figcaption {
     transform: scale(.8) translate(200px, 300px);
+  }
+  .air .size-model .infos {
+    width: 70%;
   }
 }
 /* display */
@@ -1384,8 +1392,9 @@ main {
     transform: translate(221px, 59px);
   }
   .camera .stage .figures{
-    height: auto;
-    margin-top: 80px;
+    height: 500px;
+    margin-bottom: 50px;
+    width: 70%;
   }
   .camera .stage figure {
     transform: translate(0px, 0px);
@@ -1399,7 +1408,7 @@ main {
     left: -274px;
   }
   .camera .stage figcaption {
-    transform: scale(.8) translate(137px, -109px) ;
+    transform: scale(.8) translate(70px, 300px) ;
   }  
   .camera .stage .info {
     position: static;
@@ -1446,7 +1455,8 @@ main {
 }
 @media (max-width: 740px) {
   .camera .edit .infos {
-    transform: translate(200px, 10px);
+    width: 70%;
+    align-items: center;
   }
   .camera .edit .figures {
     margin-top: 30px;
@@ -1536,8 +1546,9 @@ main {
     margin-top: 400px;
   }
   .accessories .figures {
-    height: auto;
-    margin-top: 60px;
+    /* height: auto; */
+    width: 70%;
+    height: 400px;
   }
   .accessories figcaption .caption-up {
     transform: scale(.8) translate(262px, -73px);
@@ -1547,9 +1558,12 @@ main {
   }
   .accessories figure img{
     width: 380px;
+    height: auto;
   }
   .accessories .infos {
-    margin-top: 50px;
+    width: 70%;
+    margin-top: 0px;
+    transform: translate(100px, 100px);
   }
   .info--large .info {
     max-width: none;
@@ -1663,13 +1677,17 @@ main {
 @media (max-width:740px) {
   .watch {
     height: 2000px;
+
   }
   .watch h1 {
-    margin: 0 auto;
     width: 290px;
+    transform: translate(220px, 500px);
   }
   .watch .infos {
-    margin-top: 20px;
+    width: 70%;
+    margin-top: 200px;
+    transform: translate(0px, 600px);
+    margin: 0 auto;
   }
   .watch .figures > div{
     display: flex;
@@ -1680,8 +1698,9 @@ main {
     height: auto;
     display: block;
   }
-  .watch .figures .figure-split-01 img{
-    width: 380px;
+  .watch .figures {
+    margin-top: 200px;
+    transform: translate(-100px, 0px);
   }
   .watch .figure-split-01 figure{
     transform: translate(8px, 300px);
@@ -1690,19 +1709,19 @@ main {
     transform: translate(8px, 420px);
   }
   .watch .figures .figure-split-02 img {
-    transform: translate(150px, 43px);
+    transform: translate(250px, 70px);
   }
   .watch .figures .figure-split-02 figcaption {
-    transform: translate(93px, -13px);
-  }
-  .watch .figures .figure-split-03 img{
-    width: 380px;
+    transform: translate(93px, 40px);
   }
   .watch .figure-split-03 figure {
-    transform: translate(0px, 550px);
+    transform: translate(100px, 550px);
+  }
+  .watch .figures .figure-split-03 img{
+    transform: translate(93px, -13px);
   }
   .watch .figure-split-03 figcaption {
-    transform: translate(200px, 240px);
+    transform: translate(200px, 300px);
   }
 }
 
